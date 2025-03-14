@@ -1,0 +1,64 @@
+.calculator {
+    width: 300px;
+    background: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.display {
+    height: 120px;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.row {
+    display: contents;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+.AC, .plus-minus, .percent {
+    background: #a5a5a5;
+
+}
+
+.divide, .multiply, .subtract, .add, .equal {
+    background: #ff9500;
+}
+
+.number {
+    background: #333;
+}
+
+.zero {
+    grid-column: span 2;
+    background: #333;
+}
